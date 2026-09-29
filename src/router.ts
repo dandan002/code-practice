@@ -4,7 +4,9 @@ export type Route =
   | { name: "home" }
   | { name: "problem"; slug: string }
   | { name: "playground" }
-  | { name: "settings" };
+  | { name: "settings" }
+  | { name: "privacy" }
+  | { name: "terms" };
 
 export function parseHash(hash: string): Route {
   const path = hash.replace(/^#\/?/, "");
@@ -12,6 +14,8 @@ export function parseHash(hash: string): Route {
   if (head === "p" && arg) return { name: "problem", slug: decodeURIComponent(arg) };
   if (head === "playground") return { name: "playground" };
   if (head === "settings") return { name: "settings" };
+  if (head === "privacy") return { name: "privacy" };
+  if (head === "terms") return { name: "terms" };
   return { name: "home" };
 }
 
@@ -20,6 +24,8 @@ export const href = {
   problem: (slug: string) => `#/p/${encodeURIComponent(slug)}`,
   playground: () => "#/playground",
   settings: () => "#/settings",
+  privacy: () => "#/privacy",
+  terms: () => "#/terms",
 };
 
 export function useRoute(): Route {

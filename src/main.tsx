@@ -1,6 +1,7 @@
 import { render } from "preact";
 import { useEffect } from "preact/hooks";
 import { Home } from "./pages/Home";
+import { Legal } from "./pages/Legal";
 import { Playground } from "./pages/Playground";
 import { ProblemPage } from "./pages/ProblemPage";
 import { Settings } from "./pages/Settings";
@@ -48,6 +49,9 @@ function App() {
       return <Playground />;
     case "settings":
       return <Settings />;
+    case "privacy":
+    case "terms":
+      return <Legal doc={route.name} />;
     default:
       return <Home />;
   }

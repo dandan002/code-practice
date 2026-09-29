@@ -1429,3 +1429,31 @@ input[type="range"] {
     padding: 20px 24px 40px;
   }
 }
+
+/* Legal pages + footer */
+
+.legal-page main {
+  padding: 8px 16px calc(32px + env(safe-area-inset-bottom));
+}
+.legal {
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+.legal h1 {
+  font-size: 24px;
+  margin: 12px 0 4px;
+}
+.legal h2 {
+  font-size: 17px;
+  margin: 24px 0 8px;
+}
+.site-footer {
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  padding: 28px 0 8px;
+}
+.legal-links {
+  margin-top: 8px;
+}

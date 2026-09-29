@@ -62,6 +62,10 @@ Markdown shown with the solution.
 
 Run `npm run check-problems` after editing.
 
+## Privacy & terms
+
+The app collects no data: progress and code stay in the browser's local storage. See the [Privacy Policy](src/legal/privacy.md) and [Terms of Service](src/legal/terms.md), which are also shown in the app at `#/privacy` and `#/terms`.
+
 ## License
 
 [MIT](LICENSE). Third-party components keep their own licenses: Pyodide (MPL-2.0) is copied from `node_modules` at build time, and the vendored Jedi, parso and pyflakes wheels are MIT-licensed.

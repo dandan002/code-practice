@@ -173,6 +173,13 @@ export function Home() {
             </section>
           );
         })}
+
+        <footer class="site-footer">
+          <a href={href.privacy()}>Privacy</a> · <a href={href.terms()}>Terms</a> ·{" "}
+          <a href="https://github.com/dandan002/code-practice" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </footer>
       </main>
     </div>
   );

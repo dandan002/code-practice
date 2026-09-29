@@ -1,7 +1,7 @@
 import { useEffect } from "preact/hooks";
 import { Icon } from "../components/Icon";
 import { useRunner } from "../runner/client";
-import { goBack } from "../router";
+import { goBack, href } from "../router";
 import { exportData, importData, resetAll, settings, useSettings, type Settings as S } from "../storage";
 
 export function Settings() {
@@ -120,6 +120,12 @@ export function Settings() {
           <p class="setting-help">
             Python runtime: {r.state === "ready" ? `ready (booted in ${(r.bootMs / 1000).toFixed(1)}s)` : r.state === "loading" ? "loading…" : "not started"}
             {" · "}Language tools: {r.toolsReady ? "ready" : "not loaded"}
+          </p>
+          <p class="setting-help legal-links">
+            <a href={href.privacy()}>Privacy Policy</a> · <a href={href.terms()}>Terms of Service</a> ·{" "}
+            <a href="https://github.com/dandan002/code-practice" target="_blank" rel="noopener">
+              Source (MIT)
+            </a>
           </p>
         </section>
       </main>
