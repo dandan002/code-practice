@@ -1,6 +1,7 @@
 {
   "name": "code-practice",
   "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
     "vendor": "node scripts/vendor.mjs",
     "dev": "npm run vendor && vite",

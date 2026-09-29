@@ -61,3 +61,7 @@ Markdown shown with the solution.
 - Hidden tests may omit `expected`. It is then computed from the reference solution, and `gen` builds large inputs from a Python expression (with a seeded `rng`).
 
 Run `npm run check-problems` after editing.
+
+## License
+
+[MIT](LICENSE). Third-party components keep their own licenses: Pyodide (MPL-2.0) is copied from `node_modules` at build time, and the vendored Jedi, parso and pyflakes wheels are MIT-licensed.
