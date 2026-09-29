@@ -63,7 +63,7 @@ export interface Settings {
 }
 
 export const settings = new Store<Settings>("cp:settings", {
-  theme: "system",
+  theme: "dark",
   fontSize: 14,
   autocomplete: true,
   lint: true,

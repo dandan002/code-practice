@@ -242,7 +242,9 @@ function Stats({ progress }: { progress: Record<string, ProblemProgress> }) {
               {t === "dsa" ? "DSA" : "Python"} {done}/{total}
             </span>
           ))}
-          <span title="Days in a row with practice">🔥 {streak} day{streak === 1 ? "" : "s"}</span>
+          <span title="Days in a row with practice">
+            {streak}-day streak
+          </span>
         </div>
       </div>
     </section>

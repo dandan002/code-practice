@@ -13,7 +13,7 @@ function applyTheme() {
   const t = settings.value.theme;
   const dark = t === "dark" || (t === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
   document.documentElement.dataset.theme = dark ? "dark" : "light";
-  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#0f1115" : "#ffffff");
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#26272a" : "#f4f4f3");
 }
 
 /**
